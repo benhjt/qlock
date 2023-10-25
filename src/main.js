@@ -71,7 +71,7 @@ function displayDots(minutes) {
   } else if (bullets === 3) {
     selector = '.bullet-1, .bullet-2, .bullet-3';
   } else if (bullets === 4) {
-    selector = '.bullet-1, .bullet-1, .bullet-3, .bullet-4';
+    selector = '.bullet-1, .bullet-2, .bullet-3, .bullet-4';
   }
 
   const currentBullets = document.querySelectorAll(selector);
