@@ -1,0 +1,26 @@
+{
+  "name": "qlock",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A simple web-based clock application based on QlockTwo",
+  "author": "benhjt",
+  "type": "module",
+  "scripts": {
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint --fix src/main.js",
+    "prettier": "prettier --write src/main.js",
+    "preview": "vite preview",
+    "predeploy": "npm run build"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "gh-pages": "^6.0.0",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.5"
+  }
+}
