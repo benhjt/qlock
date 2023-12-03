@@ -74,10 +74,12 @@ function displayDots(minutes) {
     selector = '.bullet-1, .bullet-2, .bullet-3, .bullet-4';
   }
 
-  const currentBullets = document.querySelectorAll(selector);
-  currentBullets.forEach((bulletEle) => {
-    bulletEle.classList.add('active');
-  });
+  if (selector) {
+    const currentBullets = document.querySelectorAll(selector);
+    currentBullets.forEach((bulletEle) => {
+      bulletEle.classList.add('active');
+    });
+  }
 }
 
 function displayTime() {
